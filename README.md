@@ -60,3 +60,20 @@ https://www.youtube.com/watch?v=jwyQUfE1Eqw&t=61s
 =======================================================================================================================================================
 6.Forking
 Note forking isn't a git command so we can't run it on the cmd it provided by the hosting environment (GitHub)
+Forking a repository creates an identical copy of the original repository and moves this copy to your account.
+Modifying your forked repository does not alter the original repository in any way.
+======================================================================================================================================================
+7.Branching
+
+=======================================================================================================================================================
+8.Git log
+The git log command is extremely powerful, and you can use it to discover a lot about a repository. But it can be especially helpful to discover information about a repository that you're collaborating on with others. You can use git log to:
+
+group commits by author with git shortlog
+  $ git shortlog
+filter commits with the --author flag
+
+  $ git log --author="Richard Kalehoff"
+filter commits using the --grep flag
+
+  $ git log --grep="border radius issue in Safari"
