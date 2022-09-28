@@ -1,5 +1,8 @@
 # Git Commands and GitHub
-Source Course:https://classroom.udacity.com/nanodegrees/nd230-fwd-t4/parts/cd1781/modules/f3ad912f-5914-4685-b83b-174a91b04f26/lessons/ls1772/concepts/5622676f-0955-43d6-a09d-fab53a7834e7
+This is my Notes on the Git and GitHub course offered by egypt fwd
+
+## Course:
+https://classroom.udacity.com/nanodegrees/nd230-fwd-t4/parts/cd1781/modules/f3ad912f-5914-4685-b83b-174a91b04f26/lessons/ls1772/concepts/5622676f-0955-43d6-a09d-fab53a7834e7
 
 
 ### 1. git init 
