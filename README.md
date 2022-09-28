@@ -61,6 +61,7 @@ $ git fetch origin master
 Git fetch is used to retrieve commits from a remote repository's branch but it does not automatically merge the local branch with the remote tracking branch after those commits have been received.
 
 refer to demo when to use fetch vs pull
+ 
 https://www.youtube.com/watch?v=jwyQUfE1Eqw&t=61s
 <hr>
 
@@ -133,6 +134,7 @@ If you're working on a repository quite often, then I'd suggest setting the watc
 Including Upstream Changes:(how to take changes made by the owner of repo to yours)
 https://www.youtube.com/watch?v=VvoC6hN6FjU
 <hr>
+ 
 ### 11.Squash Commits:
 It combines severla commits into a single commit
 https://www.youtube.com/watch?v=H5JqcdIB5y0
