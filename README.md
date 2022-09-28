@@ -1,4 +1,6 @@
 # Git Commands and GitHub
+Source Course:https://classroom.udacity.com/nanodegrees/nd230-fwd-t4/parts/cd1781/modules/f3ad912f-5914-4685-b83b-174a91b04f26/lessons/ls1772/concepts/5622676f-0955-43d6-a09d-fab53a7834e7
+
 
 ### 1. git init 
 to turn current directory to a git repository
@@ -69,6 +71,8 @@ https://www.youtube.com/watch?v=jwyQUfE1Eqw&t=61s
 Note forking isn't a git command so we can't run it on the cmd it provided by the hosting environment (GitHub)
 Forking a repository creates an identical copy of the original repository and moves this copy to your account.
 Modifying your forked repository does not alter the original repository in any way.
+
+project example:
 <hr>
 
 ### 7.Branching
