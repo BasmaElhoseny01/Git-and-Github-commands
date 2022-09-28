@@ -44,7 +44,11 @@ For h1 through h6 tags, all you'll need is a # before your text
 
 ## This is an h2.
 ### This is an h3.
+<hr>
 
+Paragraphs:
+
+To create paragraphs, use a blank line to separate one or more lines of text.
 <hr>
 Creating a table:
 You can create tables with pipes | and hyphens -. Hyphens are used to create each column's header, while pipes separate each column. You must include a blank line before your table in order for it to correctly render.
