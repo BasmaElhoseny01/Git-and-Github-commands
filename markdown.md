@@ -112,13 +112,14 @@ https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-f
 Creating Links in Markdown
 Markdown syntax for a hyperlink is square brackets followed by parentheses. The square brackets hold the text, the parentheses hold the link.
 
-[Git hub]([https://link-url-here.org](https://github.com/BasmaElhoseny01))
+[Git hub](https://github.com/BasmaElhoseny01)
 
 Internal Links:
 [Link to H2](https://github.com/BasmaElhoseny01/Git-and-Github-commands/new/master#this-is-an-h2)
 
 <hr>
 Lists:
+
 1.Unordered List of items in markdown:
 
 Also, called bullet lists, represent the list of items in an unordered way. It uses asterisk *, hyphen - or plus + to create an unordered list
@@ -173,11 +174,11 @@ Images can be added to any markdown page using the following markdown syntax:
 ![alt text for screen readers](/path/to/image.png "Text to show on mouseover")
 ```
 
-![MarineGEO circle logo](/assets/img/MarineGEO_logo.png "MarineGEO logo")
+![MarineGEO circle logo](https://media.istockphoto.com/photos/panorama-of-cairo-picture-id1180786967?k=20&m=1180786967&s=612x612&w=0&h=-beRT5TLGlfeLmJP9m7Nv_8CKcM5kcrV-coR3fbvE_0= "Cairo")
 
 
 Inserting Images using html:
 
 Images can also be inserted on pages using the html <img> tag. One advantage of using the html tag is the ability to control size and other style elements.
 
-<img src="/assets/img/MarineGEO_logo.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+<img src="https://media.istockphoto.com/photos/panorama-of-cairo-picture-id1180786967?k=20&m=1180786967&s=612x612&w=0&h=-beRT5TLGlfeLmJP9m7Nv_8CKcM5kcrV-coR3fbvE_0=" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
