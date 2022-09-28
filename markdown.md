@@ -109,8 +109,12 @@ Creating a permanent link to a code snippet:
 https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet
 
 <hr>
-Refrence Links:
+Creating Links in Markdown
+Markdown syntax for a hyperlink is square brackets followed by parentheses. The square brackets hold the text, the parentheses hold the link.
 
+[Git hub]([https://link-url-here.org](https://github.com/BasmaElhoseny01))
+
+Internal Links:
 [Link to H2](https://github.com/BasmaElhoseny01/Git-and-Github-commands/new/master#this-is-an-h2)
 
 <hr>
@@ -124,8 +128,8 @@ Also, called bullet lists, represent the list of items in an unordered way. It u
 - Item 3
 - Item 4
 + item 5
-+ item 5
-* item 6
++ item 6
+* item 7
 
 Generated Html code is
 ```html
@@ -141,4 +145,39 @@ Generated Html code is
     <li>Item 5</li>
     <li>Item 6</li>
 </ul>
+<ul>
+    <li>Item 7</li>
+</ul>
 ```
+
+2.Ordered List items in markdown:
+
+The list of items represents numbers starting from 1,2 etc, and followed by a period . symbol or right parenthesis. These can also be called numbered lists
+
+1. Ordered list element one
+2. Ordered list element two
+
+Generated Html code is
+```html
+<ol>
+    <li>Ordered list element one</li>
+    <li>Ordered list element two</li>
+</ol>
+```
+<hr>
+Inserting Images in Markdown:
+
+Images can be added to any markdown page using the following markdown syntax:
+
+```
+![alt text for screen readers](/path/to/image.png "Text to show on mouseover")
+```
+
+![MarineGEO circle logo](/assets/img/MarineGEO_logo.png "MarineGEO logo")
+
+
+Inserting Images using html:
+
+Images can also be inserted on pages using the html <img> tag. One advantage of using the html tag is the ability to control size and other style elements.
+
+<img src="/assets/img/MarineGEO_logo.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
