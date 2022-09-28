@@ -109,7 +109,36 @@ Creating a permanent link to a code snippet:
 https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet
 
 <hr>
-Links:
+Refrence Links:
 
 [Link to H2](https://github.com/BasmaElhoseny01/Git-and-Github-commands/new/master#this-is-an-h2)
 
+<hr>
+Lists:
+1.Unordered List of items in markdown:
+
+Also, called bullet lists, represent the list of items in an unordered way. It uses asterisk *, hyphen - or plus + to create an unordered list
+
+* item 1
+* Item 2
+- Item 3
+- Item 4
++ item 5
++ item 5
+* item 6
+
+Generated Html code is
+```html
+<ul>
+    <li>item 1</li>
+    <li>Item 2</li>
+</ul>
+<ul>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+<ul>
+    <li>Item 5</li>
+    <li>Item 6</li>
+</ul>
+```
