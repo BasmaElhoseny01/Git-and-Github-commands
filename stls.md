@@ -117,7 +117,8 @@ int main() {
 
     // 1.8 front and back
     /* front same for back
-    -Returns a reference to the first element in the vector.Unlike member vector::begin, which returns an iterator to this same element, this function returns a direct reference.
+    -Returns a reference to the first element in the vector.Unlike member vector::begin, which returns an iterator to
+     this same element, this function returns a direct reference.
     -Complexity:Constant.
     -return:A reference to the first element in the vector container.
     */
@@ -165,7 +166,7 @@ int main() {
         cout << ' ' << *it;
     //myvector1= 3 2 1 4
 
-    //======================================================= 2.Queue ===================================================================
+    //======================================================= 2.Queue ==================================================
     //#include <queue>
     // FIFO
 
@@ -178,7 +179,8 @@ int main() {
 
     //2.2 push
     /*
-    -Inserts a new element at the end of the queue, after its current last element. The content of this new element is initialized to val.
+    -Inserts a new element at the end of the queue, after its current last element. The content of this new element is
+     initialized to val.
     -Complixity:constant
     -return:none
     */
@@ -211,7 +213,7 @@ int main() {
     */
     cout << q.front() << endl; // 8
 
-    //======================================================= 3.Stack ===================================================================
+    //======================================================= 3.Stack ==================================================
     // LIFO
     //#include <stack>
 
@@ -255,7 +257,7 @@ int main() {
     // s:30 20 10
     s.top(); // 30
 
-    //======================================================= 4.Deqeue ===================================================================
+    //======================================================= 4.Deqeue =================================================
     //#include <deque>
 
     // Queue+Stack
@@ -318,7 +320,7 @@ int main() {
     cout << dq[1] << " ";//2
 
 
-    //======================================================= 5.Priority queue ===================================================================
+    //======================================================= 5.Priority queue =========================================
     // #include<queue>
 
     //ordered queue descending
@@ -393,7 +395,7 @@ int main() {
     }
     //minpq:1 10 80
 
-    //======================================================= 6.set ===================================================================
+    //======================================================= 6.set ====================================================
     // #include <set>
     //like priority queue but for unique elements
     //elements are unique and sorted increasingly + has iterator so we can loop on
@@ -405,9 +407,12 @@ int main() {
     //6.2.a insert
     /*
    -Syntax:pair<iterator,bool> insert (const value_type& val);
-   -Extends the container by inserting new elements, effectively increasing the container size by the number of elements inserted.
+   -Extends the container by inserting new elements, effectively increasing the container size by the number of elements
+     inserted.
    -Complexity:If a single element is inserted, logarithmic in size in genera
-   -return:return a pair, with its member pair::first set to an iterator pointing to either the newly inserted element or to the equivalent element already in the set. The pair::second element in the pair is set to true if a new element was inserted or false if an equivalent element already existed.
+   -return:return a pair, with its member pair::first set to an iterator pointing to either the newly inserted element 
+     or to the equivalent element already in the set. The pair::second element in the pair is set to true if a new 
+     element was inserted or false if an equivalent element already existed.
    */
     st.insert(10);
     st.insert(1);
@@ -421,9 +426,11 @@ int main() {
     -Syntax:iterator insert (iterator position, const value_type& val);
    -position parm:Hint for the position where the element can be inserted.
     The function optimizes its insertion time if position points to the element that will precede the inserted element.
-    Notice that this is just a hint and does not force the new element to be inserted at that position within the set container (the elements in a set always follow a specific order).
+    Notice that this is just a hint and does not force the new element to be inserted at that position within the set 
+     container (the elements in a set always follow a specific order).
    -Complexity:amortized constant if a hint is given and the position given is the optimal.
-   -return:return an iterator pointing to either the newly inserted element or to the element that already had its same value in the set.
+   -return:return an iterator pointing to either the newly inserted element or to the element that already had its same 
+     value in the set.
    */
 
    //6.3 looping (it has bidirectional itertator)
@@ -489,7 +496,8 @@ int main() {
     //6.8 Find
     /*
     -Syntax:iterator find (const value_type& val) const;;
-    -Searches the container for an element equivalent to val and returns an iterator to it if found, otherwise it returns an iterator to set::end.
+    -Searches the container for an element equivalent to val and returns an iterator to it if found, otherwise it 
+     returns an iterator to set::end.
     -Complexity:log(n), n is size
     -return:An iterator to the element, if val is found, or set::end otherwise.
     */
@@ -511,7 +519,7 @@ int main() {
         cout<<i<<" ";
     // 2 1
 
-    //======================================================= 7.Multi set ===================================================================
+    //======================================================= 7.Multi set ==============================================
     // #include <set>
     // set + repetition
     //elements are repeated and sorted increasingly + has iterator so we can loop on
@@ -523,7 +531,8 @@ int main() {
     /* same as set wth three versions
      * the diffrent may appear in return type due yo diffrent version just chsck when you type
      Note:C++98:There are no guarantees on the relative order of equivalent elements.
-        C++11:The relative ordering of equivalent elements is preserved, and newly inserted elements follow their equivalents already in the container.
+        C++11:The relative ordering of equivalent elements is preserved, and newly inserted elements follow their 
+        equivalents already in the container.
      */
     multist.insert(10);
     multist.insert(1);
@@ -562,7 +571,8 @@ int main() {
     -position parm:Iterator pointing to a single element to be removed from the set.
     -Removes from the set container either a single element
     -Complexity:amortized constant.
-    -return:An iterator pointing to the element immediately following position prior(before) to the element being erased. If no such element exists, end() is returned.
+    -return:An iterator pointing to the element immediately following position prior(before) to the element being erased
+     . If no such element exists, end() is returned.
     */
     multist.erase(++multist.begin());//1 2nf element
     cout<<endl;
@@ -620,7 +630,7 @@ int main() {
     // 2 1 1
 
 
-    //======================================================= 8.unorderedset ===================================================================
+    //======================================================= 8.unorderedset ===========================================
     // #include <set>
     // set + unordered
     //elements are unique and not sorted + has iterator so we can loop on
@@ -654,7 +664,8 @@ int main() {
     //8.3.a erase
     /*
     -Syntax:size_type erase ( const key_type& k );;
-    -k parm:Value of the element to be erased.Member type key_type is the type of the elements in the container. In unordered_set containers it is the same as value_type,.
+    -k parm:Value of the element to be erased.Member type key_type is the type of the elements in the container. In 
+     unordered_set containers it is the same as value_type,.
     -Removes from the set container either a single element.
     -Complexity:Average:const
                 Worst:linear.
@@ -670,7 +681,8 @@ int main() {
     //8.3.b erase
     /*
     -Syntax:iterator erase ( const_iterator position );
-    -position parm:Iterator pointing to a single element to be removed from the unordered_set.(Member type const_iterator is a forward iterator type.)
+    -position parm:Iterator pointing to a single element to be removed from the unordered_set.(Member type 
+     const_iterator is a forward iterator type.)
     -Removes from the set container either a single element.
     -Complexity:Average:const
                 Worst:linear.
@@ -703,18 +715,21 @@ int main() {
     /*
     -Syntax:iterator find ( const key_type& k );
             const_iterator find ( const key_type& k ) const;
-    -Searches the container for an element with k as value and returns an iterator to it if found, otherwise it returns an iterator to unordered_set::end.
+    -Searches the container for an element with k as value and returns an iterator to it if found, otherwise it returns 
+     an iterator to unordered_set::end.
     -Complexity:Average case: constant.
                 Worst case: linear in container size.
-    -return:An iterator to the element, if the specified value is found, or unordered_set::end if it is not found in the container.
-    -Note:Member types iterator and const_iterator are forward iterator types. Both may be aliases of the same iterator type.
+    -return:An iterator to the element, if the specified value is found, or unordered_set::end if it is not found in the
+     container.
+    -Note:Member types iterator and const_iterator are forward iterator types. Both may be aliases of the same iterator 
+     type.
     */
     if(unset.find(10)==unset.end())
         cout<<endl<<"not found"<<endl;
     else cout<<"Found" <<endl;
 
 
-    //======================================================= 9.unordered Multi set ===================================================================
+    //======================================================= 9.unordered Multi set ====================================
     // #include <set>
     // set + unordered + repeated
     //elements are repeated and not sorted + has iterator so we can loop on
@@ -747,7 +762,8 @@ int main() {
     -Syntax:iterator insert (iterator hint, const value_type& val);
    -hint parm:Hint for the position where the element can be inserted.
     The function optimizes its insertion time if position points to the element that will precede the inserted element.
-    Notice that this is just a hint and does not force the new element to be inserted at that position within the set container (the elements in a set always follow a specific order).
+    Notice that this is just a hint and does not force the new element to be inserted at that position within the set 
+     container (the elements in a set always follow a specific order).
    -Complexity:Average case: constant.
                Worst case: linear in container size.
    -return:return an iterator pointing to either the newly inserted element.
@@ -769,7 +785,7 @@ int main() {
     //9.5 find
     /*Same as unorderd set*/
 
-   //================================================================10.Map====================================================================
+   //================================================================10.Map=============================================
    //#include <map>
    //Note:keys are sorted ascendingly
 
@@ -798,8 +814,10 @@ int main() {
    //Ypussef 20
 
    //10.3 insert
-   //insert(pair): This function inserts the pair in the map. The insertion only takes place when the key passed is not already inset.
-   //-return:It returns a pointer pair. First element pointing to the pair already present or newly inserted. Second element returning the boolean status “true” or “false”.
+   //insert(pair): This function inserts the pair in the map. The insertion only takes place when the key passed is not
+   // already inset.
+   //-return:It returns a pointer pair. First element pointing to the pair already present or newly inserted. Second 
+   // element returning the boolean status “true” or “false”.
    //Time complexity: log(n) where n is the size of the map
     auto ptr = mp.insert({"string", 20 });
 
@@ -879,7 +897,8 @@ int main() {
      -Syntax:size_type count (const key_type& k) const;
      -Count elements with a specific key Because all elements in a map container are unique, the function can only
       return 1 (if the element is found) or zero (otherwise).
-     -return:1 if the container contains an element whose key is equivalent to k, or zero otherwise.Member type size_type is an unsigned integral type.
+     -return:1 if the container contains an element whose key is equivalent to k, or zero otherwise.Member type 
+      size_type is an unsigned integral type.
      -Complexity:Logarithmic in size.
      */
     cout<<mp.count("string")<<endl;//1
@@ -888,8 +907,11 @@ int main() {
     //10.6 find
     /*
      -Synatx:iterator=map_name.find(key) or constant iterator=map_name.find(key)
-     -Parameters: The function accepts one mandatory parameter key, which specifies the key to be searched in the map container.
-     -Return Value: The function returns an iterator or a constant iterator which refers to the position where the key is present in the map. If the key is not present in the map container, it returns an iterator or a constant iterator which refers to map.end().
+     -Parameters: The function accepts one mandatory parameter key, which specifies the key to be searched in the map 
+     container.
+     -Return Value: The function returns an iterator or a constant iterator which refers to the position where the key 
+     is present in the map. If the key is not present in the map container, it returns an iterator or a constant 
+     iterator which refers to map.end().
      -Complexity:The time complexity for searching elements in std::map is O(log n)
     */
     auto mpit=mp.find("Basma");
@@ -936,8 +958,10 @@ Wo                   Worst case: linear in container size.
 
     //11.3 insert
     /*
-    -insert(pair): This function inserts the pair in the map. The insertion only takes place when the key passed is not already inset.
-    -return:It returns a pointer pair. First element pointing to the pair already present or newly inserted. Second element returning the boolean status “true” or “false”.
+    -insert(pair): This function inserts the pair in the map. The insertion only takes place when the key passed is 
+     not already inset.
+    -return:It returns a pointer pair. First element pointing to the pair already present or newly inserted. Second 
+     element returning the boolean status “true” or “false”.
     -Time complexity: Average case: constant.
                        Worst case: linear in container size.
     */
@@ -957,7 +981,8 @@ Wo                   Worst case: linear in container size.
     /*
       -Syntax:iterator erase ( const_iterator position );
       -Removes from the unordered_map container a single element
-      -Return: an iterator pointing to the position immediately following the last of the elements erased.Member type iterator is a forward iterator type.
+      -Return: an iterator pointing to the position immediately following the last of the elements erased.Member type
+      iterator is a forward iterator type.
       -Complexity:Average case: constant
                   Worst case: Linear in the container size.
     */
@@ -991,7 +1016,8 @@ Wo                   Worst case: linear in container size.
     /*
       -Syntax:iterator erase ( const_iterator first, const_iterator last );
       -Removes from the unordered_map container either a range of elements ([first,last)).
-      -Return: an iterator pointing to the position immediately following the last of the elements erased.Member type iterator is a forward iterator type.
+      -Return: an iterator pointing to the position immediately following the last of the elements erased.Member type
+      iterator is a forward iterator type.
       -Complexity:Average case: Linear in the number of elements removed.
                   Worst case: Linear in the container size.
     */
@@ -1005,7 +1031,8 @@ Wo                   Worst case: linear in container size.
      -Syntax:size_type count (const key_type& k) const;
      -Count elements with a specific key Because all elements in a map container are unique, the function can only
       return 1 (if the element is found) or zero (otherwise).
-     -return:1 if the container contains an element whose key is equivalent to k, or zero otherwise.Member type size_type is an unsigned integral type.
+     -return:1 if the container contains an element whose key is equivalent to k, or zero otherwise.Member type 
+     size_type is an unsigned integral type.
      -Complexity:Average case: linear in the number of elements counted.
                  Worst case: linear in container size.
      */
@@ -1018,7 +1045,8 @@ Wo                   Worst case: linear in container size.
    -find function in C++ is used to search for a specific key in an unordered map.
    -Syntax:iterator find ( const key_type& k );const_iterator find ( const key_type& k ) const;
    -Parameters: It takes the key as a parameter.
-   -Return values: If the given key exists in unordered_map it returns an iterator to that element otherwise it returns the end of the map iterator.Member types iterator and const_iterator are forward iterator types.
+   -Return values: If the given key exists in unordered_map it returns an iterator to that element otherwise it returns
+   the end of the map iterator.Member types iterator and const_iterator are forward iterator types.
    -Time Complexity : Average case: constant.
                       Worst case: linear in container size.
   */
@@ -1044,11 +1072,14 @@ Wo                   Worst case: linear in container size.
     /*
      -Syntax:iterator insert (const value_type& val);
      -val parm :defined in multimap as pair<const key_type,mapped_type>
-     -Extends the container by inserting new elements, effectively increasing the container size by the number of elements inserted.
-      Internally, multimap containers keep all their elements sorted by key following the criterion specified by its comparison object.
+     -Extends the container by inserting new elements, effectively increasing the container size by the number of
+     elements inserted.
+      Internally, multimap containers keep all their elements sorted by key following the criterion specified by its
+      comparison object.
       The elements are always inserted in its respective position following this ordering.
      Note:There are no guarantees on the relative order of equivalent elements.
-     -Return:iterator pointing to the newly inserted element in the multiset.Member type iterator is a bidirectional iterator type that points to elements.
+     -Return:iterator pointing to the newly inserted element in the multiset.Member type iterator is a bidirectional
+     iterator type that points to elements.
      -Complexity:logarithmic in size
      */
     mltimp.insert({"A",10});
@@ -1124,7 +1155,8 @@ Wo                   Worst case: linear in container size.
     -Searches the container for elements with a key equivalent to k and returns the number of matches.
      Two keys are considered equivalent if the container's comparison object returns false reflexively (i.e., no matter
      the order in which the keys are passed as arguments).rn:
-    -return:The number of elements in the container contains that have a key equivalent to k.Member type size_type is an unsigned integral type.
+    -return:The number of elements in the container contains that have a key equivalent to k.Member type size_type is 
+     an unsigned integral type.
     -complexity:Logarithmic in size, plus linear in the number of matches.
     */
     mltimp.insert({"D",8});
@@ -1135,9 +1167,12 @@ Wo                   Worst case: linear in container size.
     //12.3 find
     /*
      -Syntax:iterator find (const key_type& k);const_iterator find (const key_type& k) const;
-     -Searches the container for an element with a key equivalent to k and returns an iterator to it if found, otherwise it returns an iterator to multimap::end.
-     NOTE***:Notice that this function returns an iterator to a single element (of the possibly multiple elements with equivalent keys). To obtain the entire range of equivalent elements, see multimap::equal_range.
-     -return:An iterator to the element, if an element with specified key is found, or multimap::end otherwise.Member types iterator and const_iterator are bidirectional iterator types pointing to elements (of type value_type).
+     -Searches the container for an element with a key equivalent to k and returns an iterator to it if found, 
+     otherwise it returns an iterator to multimap::end.
+     NOTE***:Notice that this function returns an iterator to a single element (of the possibly multiple elements with
+     equivalent keys). To obtain the entire range of equivalent elements, see multimap::equal_range.
+     -return:An iterator to the element, if an element with specified key is found, or multimap::end otherwise.Member
+     types iterator and const_iterator are bidirectional iterator types pointing to elements (of type value_type).
      -Complexity:Logarithmic in size.
     */
 
@@ -1147,7 +1182,7 @@ Wo                   Worst case: linear in container size.
     else cout<<"Not found"<<endl;
 
 
-    //==================================================13.unordered Multi map==========================================/
+    //==================================================13.unordered Multi map=========================================/
     //include<map>
     //map+unordered + duplictes in key
     //13.1 Decleration:
@@ -1161,7 +1196,8 @@ Wo                   Worst case: linear in container size.
     /*
      -Syntax:iterator insert (const value_type& val);
      -val parm :defined in multimap as pair<const key_type,mapped_type>
-     -Return:iterator pointing to the newly inserted element in the multiset.Member type iterator is a forward iterator type.
+     -Return:iterator pointing to the newly inserted element in the multiset.Member type iterator is a forward 
+     iterator type.
      -Complexity:Average case: constant.
                 Worst case: linear in container size.
      */
@@ -1187,7 +1223,8 @@ Wo                   Worst case: linear in container size.
     /*
       -Syntax:iterator erase ( const_iterator position );
       -Removes a single element to be removed from the unordered_multimap
-      -Return:an iterator pointing to the position immediately following the last of the elements erased.Member type iterator is a forward iterator type.
+      -Return:an iterator pointing to the position immediately following the last of the elements erased.Member type
+      iterator is a forward iterator type.
       -Complexity:constant
                   Worst case: Linear in the container size.
     */
@@ -1220,7 +1257,8 @@ Wo                   Worst case: linear in container size.
     /*
       -Syntax:iterator erase ( const_iterator first, const_iterator last );
       -Removes from the unordered_multimap container either the elements those in a range ([first,last)).
-      -Return:an iterator pointing to the position immediately following the last of the elements erased.Member type iterator is a forward iterator type.
+      -Return:an iterator pointing to the position immediately following the last of the elements erased.Member type
+      iterator is a forward iterator type.
       -Complexity:Average case: Linear in the number of elements removed.
                   Worst case: Linear in the container size.
     */
@@ -1233,8 +1271,10 @@ Wo                   Worst case: linear in container size.
     //13.5 count
     /*
      -Syntax:size_type count ( const key_type& k ) const;
-     -Count elements with a specific key.Searches the container for elements whose key is k and returns the number of elements found.
-     -return:The number of elements in the container with a key equivalent to k.Member type size_type is an unsigned integral type.
+     -Count elements with a specific key.Searches the container for elements whose key is k and returns the number of
+     elements found.
+     -return:The number of elements in the container with a key equivalent to k.Member type size_type is an unsigned
+     integral type.
      -complexity:Average case: linear in the number of elements counted.
                  Worst case: linear in container size.
      */
@@ -1248,10 +1288,12 @@ Wo                   Worst case: linear in container size.
     //13.6 Find
     /*
     -Syntax:iterator find ( const key_type& k );const_iterator find ( const key_type& k ) const;
-    -Searches the container for an element with k as key and returns an iterator to it if found, otherwise it returns an iterator to unordered_multimap::end (the element past the end of the container).
+    -Searches the container for an element with k as key and returns an iterator to it if found, otherwise it returns
+     an iterator to unordered_multimap::end (the element past the end of the container).
      To obtain a range with all the elements whose key is k you can use member function equal_range.
      To just check whether a particular key exists, you can use count.
-     -return:An iterator to the element, if the specified key value is found, or unordered_multimap::end if the specified key is not found in the container.Member types iterator and const_iterator are forward iterator types.
+     -return:An iterator to the element, if the specified key value is found, or unordered_multimap::end if the
+     specified key is not found in the container.Member types iterator and const_iterator are forward iterator types.
     -Complexity:Average case: constant.
                 Worst case: linear in container size.
     */
@@ -1261,7 +1303,7 @@ Wo                   Worst case: linear in container size.
         cout<<"Found "<<itunmmp->first<<" "<<itunmmp->second<<endl;
     else cout<<"Not found"<<endl;
 
-    //====================================Sort & Reverse functions ========================================================
+    //====================================Sort & Reverse functions =====================================================
     //For types of iterators refer to word notes
     // 1.sort
     // Syntax:void sort (RandomAccessIterator first, RandomAccessIterator last);
