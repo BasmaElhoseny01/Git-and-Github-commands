@@ -119,7 +119,7 @@ Markdown syntax for a hyperlink is square brackets followed by parentheses. The 
 [Git hub](https://github.com/BasmaElhoseny01)
 
 Internal Links:
-[Link to H2](https://github.com/BasmaElhoseny01/Git-and-Github-commands/edit/master/markdown.md#this-is-an-h2)
+1. [Example](#this-is-an-h2)
 <hr>
 Lists:
 
