@@ -1,0 +1,56 @@
+- git config --global user.name
+- git config --global core.editor "code --wait"
+- cat .gitconfig  (From root Dirc)
+
+- git init
+- git add file_1.txt (Stage file_2.txt)
+- git add -p file_1.txt (add parts of file_1.txt changes only t the stagging not whole file :D)
+- git restore --staged file_1.txt  (Unstage file_2.txt)
+- git restore file_1.txt   (get back to the last commit version)
+- git commit -m "Message"
+- git status
+- git log
+- git log --oneline
+- git log --graph
+- git log --after="2025-3-5" --before="2025-3-2" --author="Basma"
+- git log --grep="added"
+- git log -- README.md (logs for commits in which this file was involved)
+
+- git branch (list branches) 
+- git branch <branch_name> (Create New Branch)
+- git branch <branch_name> <commit_hash> (Create new Branch starting from this commit)
+- git branch -d <branch_name> (Delete Branch)
+- git checkout <branch_name> (change branch)
+- git checkout -b <branch_name> (create branch and move to it)
+
+- git merge <branch_name> (merges the <branch_name> to the current branch we are in):
+	- fast-forward-merge: if no commits are in the current branch since we have taken the new branch (So Linear History Shown)
+		_._.
+		    \._./
+
+	- Merge Commit (Three-Way Merge): After the new branch is taken both the new and old has commits (divergence) So we need to create 	  another commit with message (Non-linear (shows branches))
+		_._.-.-.-.-*(new commit)
+		    \._._./
+- git merge --abort (undo merge done now after git merge)
+
+- git diff (compares files un staged with staged)
+- git diff --staged (compares files staged with committed :D)
+- git diff <commit_id> <commit_id> (compares 2 commits)
+- git diff <branch_name> <branch_name> (compares 2 branches)
+
+- git stash
+- git stash pop
+- git stash apply stash@{1} ( Applies the specified stash (stash@{1} in this case) to your working directory. Does not remove the stash from the stash list)
+- git stash list
+
+- git checkout <hash no> (Detach Head to this commit (like roll back to see what was in such commit)
+- git checkout
+- git reflog (log checkout history)
+- git checkout HEAD~2 (moves 2 commits back from the head)
+
+- git rebase <barnch_name> (DON'T RUN THIS IN MASTER OR MAIN Branch) (git checkout branch_1 \\ git rebase  master)
+
+- git cherry-pick
+
+- git submodule add https://github.com/......
+- git submodule update --init --recursive
